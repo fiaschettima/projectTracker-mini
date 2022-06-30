@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+    <title>Document</title>
+</head>
+<body>
+    <header class="jumbotron">
+        <h1 class="display-3">Project Tracker</h1>
+        <p class="lead">Current Time & Date</p>
+        <p id="currentDay" class="lead"></p>
+      </header>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Project Name</label>
+                    <input type="text" class="form-control" id="projName" placeholder="Project name .... ">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Project Type</label>
+                    <input type="text" class="form-control" id="projType" placeholder="Project Type...">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Due Date</label>
+                    <input type="date" class="form-control" id="dueDate" placeholder="Project name .... ">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Hourly Rate</label>
+                    <input type="number" class="form-control" id="hourRate" placeholder="Project Type...">
+                  </div>
+                  <div class="mb-3">
+                    <input type="submit" class="form-control" id="addProj" value="Add Project">
+                  </div>
+            </div>
+            <div class="col-md-8">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Project Name</th>
+                        <th scope="col">Project Type</th>
+                        <th scope="col">Hourly Rate($)</th>
+                        <th scope="col">Due Date</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button> -->
+
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      <script src="./assets/JS/script.js"></script>
+</body>
+</html>
